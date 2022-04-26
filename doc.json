@@ -1,0 +1,38 @@
+{
+  "name": "egg_hunt",
+  "description": "A simple easter egg hunt game",
+  "author": "voximity",
+  "config": {
+    "eggAsset": {
+      "description": "The brick asset to use for eggs.",
+      "type": "string",
+      "default": "PB_DefaultPole"
+    },
+    "eggSize": {
+      "description": "The brick size to use for eggs. If the brick asset is NOT procedural, leave blank or set to 0,0,0.",
+      "type": "string",
+      "default": "3,3,3"
+    },
+    "amount": {
+      "description": "If less than 1, a percent of how many eggs to spawn. If over 1, a fixed number of eggs to spawn.",
+      "type": "number",
+      "default": 0.5
+    },
+    "auth": {
+      "description": "A list of users who can load and place eggs.",
+      "type": "players",
+      "default": []
+    },
+    "gameLength": {
+      "description": "How long the game should last, in seconds.",
+      "type": "number",
+      "default": 300
+    },
+    "autorestartDelay": {
+      "description": "How long to wait, in seconds, before auto restarting to the next round. Set to 0 to disable auto restarting.",
+      "type": "number",
+      "default": 0
+    }
+  },
+  "commands": []
+}
